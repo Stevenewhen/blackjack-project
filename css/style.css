@@ -46,6 +46,10 @@ img {
 button {
     margin: 0;
     color: maroon;
+    border: solid;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
 }
 
 button:hover {

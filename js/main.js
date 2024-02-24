@@ -102,13 +102,12 @@ function startGame() {
 
 
 function stay() {
-    let hiddenCard = document.getElementById("dCards").lastChild;
-    hiddenCard.src = "./assets/cards/" + hidden + ".png";
     dSum = reduceAce(dSum, dAceCount);
     pSum = reduceAce(pSum, pAceCount);
-
     canHit = false;
-    document.getElementById('hidden').src = './assets/cards/' + hidden + '.png';
+
+    let hiddenCardImg = document.getElementById("dCards").firstChild;
+    hiddenCardImg.src = "";
 
     while (dSum < 17) {
         let cardImg = document.createElement("img");
